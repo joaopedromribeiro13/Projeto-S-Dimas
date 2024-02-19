@@ -10,6 +10,8 @@
     --fundo-footer: #00000084;
 
 }
+/* INICIO NAVBAR */
+
 
 nav {
     display: grid;
@@ -17,6 +19,7 @@ nav {
     width: 100%;
     height: 15vh;
     background-color: var(--fundo-nav);
+    position: fixed;
 }
 
 nav img {
@@ -34,19 +37,42 @@ nav ul {
 nav ul li {
     padding-right: 20px;
     list-style-type: none;
+    font-family:sans-serif;
 }
+
+nav ul li:hover {
+    animation: 0.6s alternate;
+    animation-name: scroll-nav;
+}
+
+@keyframes scroll-nav {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
 
 #container nav ul a {
     text-decoration: none;
     color: black;
 }
+
+
+/* FIM NAVBAR */
+
+/* INICIO PAGINA 1 */
+
 .parallax {
     width: 100%;
-    height: 70vh;
+    height: 600px;
 
 
 
-    background-image: url("fundo1.jpg");
+    background-image: url("são dimas.png");
     align-items: center;
 
     background-attachment: fixed;
@@ -60,17 +86,76 @@ nav ul li {
     background-repeat: no-repeat;
     -moz-background-repeat: no-repeat;
     -webkit-background-repeat: no-repeat;
+    
 
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+
   
 }
+
+
+/* FIM PAGINA 1 */
+
+/* INICIO PAGINA 2 */
+
 
 .pag2 {
     height: 100vh;
     background-color: var(--fundo-pag2);
+    width: 100%;
+    max-height: auto;
+    min-height: 90vh;
+    background-color: var(--cor-6);
+    color: var(--letra-pag3);
 }
+
+  
+  .pag2 h2 {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    padding: 60px 0 0 0;
+    font-size: 65px;
+  }
+  
+  .pag2 p {
+    padding: 10px 0 0 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .grid-pag-2 {
+    padding: 100px 1% 40px 1%;
+    justify-content: center;
+    display: grid;
+    display: -moz-grid;
+    column-gap: 1%;
+    grid-template-columns: repeat(auto-fit, 350px);
+  }
+
+  .box-pag-2 {
+    width: 1fr;
+    height: 1fr;
+  }
+  
+  .box-pag-2 h3 {
+    text-align: center;
+  }
+  
+
+  .box-pag-2 img {
+    padding: 10% 0 0 40%;
+    width: 80px;
+    height: 80px;
+  }
+
+
+
+
+
+
+/* FIM PAGINA 2 */
+
+/* INICIO PAGINA 3 */
+
 
 .pag3    {
     height: 100vh;
@@ -78,11 +163,61 @@ nav ul li {
 }
 
 
+/* FIM PAGINA 3 */
 
 
+/* INICIO FOOTER  */
 footer {
     color: #ffffff;
     height: 60vh;
     background-color: var(--fundo-footer);
 }
+
+footer {
+    background-color: #272424;
+    height: 60vh auto;
+}
+
+#grid-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 370px);
+    column-gap: 40px;
+    justify-content: space-between;
+    color: aliceblue;
+    padding-bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.box-1, .box-2 {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.box-1 h2 {
+    color: var(--cor-letras);
+    font-size: 24px;
+    padding: 34px 0 34px 0;
+}
+
+.box-2 h2 {
+    color: var(--cor-letras);
+    font-size: 24px;
+    padding: 34px 0 34px 0;
+}
+
+.box-1 h3 {
+    color: var(--cor-letra-footer);
+    font-size: 20px;
+}
+
+.box-1 h3 span {
+    padding-right: 8px;
+    font-size: 22px;
+    color: var(--cor-letras);
+}
+
+
+
+/* FIM FOOTER  */
 
