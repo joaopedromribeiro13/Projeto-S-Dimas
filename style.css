@@ -5,8 +5,8 @@
 
 :root {
     --fundo-nav: #ffffff;
-    --fundo-pag2: #f0dcdc;
-    --fundo-pag3: #494949;
+    --fundo-pag2: #ffffff;
+    --fundo-pag3: #FFEEC6;
     --fundo-footer: #00000084;
 
 }
@@ -62,6 +62,9 @@ nav ul li:hover {
 }
 
 
+
+
+
 /* FIM NAVBAR */
 
 /* INICIO PAGINA 1 */
@@ -104,7 +107,6 @@ nav ul li:hover {
     width: 100%;
     max-height: auto;
     min-height: 90vh;
-    background-color: var(--cor-6);
     color: var(--letra-pag3);
 }
 
@@ -221,3 +223,10 @@ footer {
 
 /* FIM FOOTER  */
 
+
+
+
+
+svg {
+    transform: rotate(180);
+}
