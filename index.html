@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paróquia São Dimas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div id="container">
-        <nav id="navbar">
+        <!-- <nav id="navbar">
             <img src="logo 2.jpg" alt="Paróquia São Dimas Serrano">
             <ul>
                 <a href="paroquia.html">
@@ -29,7 +30,37 @@
                     <li>Contato</li>
                 </a>
             </ul>
-        </nav>
+        </nav> -->
+
+
+
+        <div class="Navbar">
+                <div class="Navbar__Link Navbar__Link-brand">
+                    <img src="logo 2.jpg" alt="Paróquia São Dimas Serrano">
+                </div>
+                <div class="Navbar__Link Navbar__Link-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="Navbar__Items">
+                    <div class="Navbar__Link">
+                        <a href="paroquia.html">Paróquia</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="celebracoes.html">Celebrações</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="atendimento.html">Atendimento</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="comunidade.html">Comunidade</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="#" id="submit" class="btn btn-primary" onclick="scrollDown()">Contato</a>
+                    </div>
+                </nav>
+
+        </div>
+
         <div class="parallax">
 
         </div>
@@ -94,6 +125,7 @@
         </footer>
     </div>
     <script src="footer.js"></script>
+    <script src="navbar.js"></script>
 </body>
 
 </html>
