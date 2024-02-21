@@ -13,19 +13,19 @@
 /* INICIO NAVBAR */
 
 
-nav {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    width: 100%;
+/* #navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
     height: 15vh;
     background-color: var(--fundo-nav);
-    position: fixed;
+    position: relative;
 }
 
-nav img {
+#navbar img {
     padding: 10px;
-    width: 20%;
-    height: auto;
+    width: 100px;
+    height: 100% auto;
 }
 
 nav ul {
@@ -60,7 +60,63 @@ nav ul li:hover {
     text-decoration: none;
     color: black;
 }
+ */
 
+
+
+ .Navbar {
+    background-color: var(--fundo-nav);
+    display: flex;
+    justify-content:space-around;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+  }
+
+  .Navbar img {
+    width: 100px;
+    height: 100% auto;
+  }
+  
+  .Navbar__Link {
+    padding-right: 15px;
+  }
+  
+  .Navbar__Link a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .Navbar__Items {
+    display: flex;
+  }
+  
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+  } 
 
 
 
@@ -70,7 +126,8 @@ nav ul li:hover {
 /* INICIO PAGINA 1 */
 
 .parallax {
-    width: 100%;
+    width: 1920px;
+    max-width: 100%;
     height: 600px;
 
 
