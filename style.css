@@ -82,6 +82,20 @@ nav ul li:hover {
   .Navbar__Link {
     padding-right: 15px;
   }
+
+  .Navbar__Link:hover {
+    animation: 0.6s alternate;
+    animation-name: scroll-nav;
+  }
+
+  @keyframes scroll-nav {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
   
   .Navbar__Link a {
     text-decoration: none;
@@ -125,35 +139,49 @@ nav ul li:hover {
 
 /* INICIO PAGINA 1 */
 
-.parallax {
-    width: 1920px;
-    max-width: 100%;
-    height: 600px;
-
-
-
-    background-image: url("são dimas.png");
-    align-items: center;
-
-    background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-
-    background-position: center;
-    -moz-background-position: center;
-    -webkit-background-position: center;
-
-    background-repeat: no-repeat;
-    -moz-background-repeat: no-repeat;
-    -webkit-background-repeat: no-repeat;
-    
-
-
+.parallax img {
+width: 100%;
+height: auto;
   
 }
 
 
 /* FIM PAGINA 1 */
+
+
+/* INICIO PAGINA HORARIOS */
+
+
+
+.pag-horarios {
+  height: 100vh;
+  width: 100%;
+}
+
+.grid-horarios {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+
+}
+
+.pag-horarios h1 {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM PAGINA HORARIOS */
+
+
 
 /* INICIO PAGINA 2 */
 
