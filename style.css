@@ -82,6 +82,20 @@ nav ul li:hover {
   .Navbar__Link {
     padding-right: 15px;
   }
+
+  .Navbar__Link:hover {
+    animation: 0.6s alternate;
+    animation-name: scroll-nav;
+  }
+
+  @keyframes scroll-nav {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
   
   .Navbar__Link a {
     text-decoration: none;
@@ -133,6 +147,41 @@ height: auto;
 
 
 /* FIM PAGINA 1 */
+
+
+/* INICIO PAGINA HORARIOS */
+
+
+
+.pag-horarios {
+  height: 100vh;
+  width: 100%;
+}
+
+.grid-horarios {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+
+}
+
+.pag-horarios h1 {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM PAGINA HORARIOS */
+
+
 
 /* INICIO PAGINA 2 */
 
