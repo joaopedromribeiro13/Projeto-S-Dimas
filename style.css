@@ -244,7 +244,7 @@ height: auto;
 
 footer {
     color: #ffffff;
-    height: 50vh;
+    height: 50vh auto;
     background-color: var(--fundo-footer);
 }
 
