@@ -250,6 +250,31 @@ height: auto;
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .grid-horarios {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: auto;
+    justify-content: center;
+  
+  }
+  
+  .box-igrejas {
+    box-shadow: 7px 7px 14px #bebebe,
+    -7px -7px 14px #bebebe;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    max-width: 490px;
+    background-color: #fef3d9;
+    padding: 20px;
+  }
+}
+
 .box-igrejas {
   box-shadow: 7px 7px 14px #bebebe,
   -7px -7px 14px #bebebe;
