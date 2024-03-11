@@ -1,0 +1,13 @@
+.pag-1 {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.pag-2 {
+    height: 50vh;
+    background-color: #e0e0e0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
