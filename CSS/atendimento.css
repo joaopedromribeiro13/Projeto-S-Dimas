@@ -3,7 +3,8 @@
 }
 
 .pag-atendimento {
-    height: 60vh;
+    height: 60vh auto;
+    padding-bottom: 50px;
 }
 
 .pag-atendimento h1 {
@@ -11,4 +12,20 @@
     padding-bottom: 20px;
     text-align: center;
     color: var(--cor-titulos);
+}
+
+.h-secretaria h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.endereco h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
 }
