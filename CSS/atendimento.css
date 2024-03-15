@@ -1,0 +1,14 @@
+:root {
+    --cor-titulos: #f5b41c;
+}
+
+.pag-atendimento {
+    height: 60vh;
+}
+
+.pag-atendimento h1 {
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--cor-titulos);
+}
